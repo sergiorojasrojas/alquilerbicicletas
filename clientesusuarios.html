@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>P&aacute;gina de ClientesAdmin de Sergio Rojas Rojas</title>
+<link rel="stylesheet" type="text/css" href="./estilosbicicletas.css" />
+<style>
+	h1{
+		text-align:center;
+	}
+
+	table{
+		background-color:white;
+		padding:5px;
+		border:#666 5px solid;
+	}
+	
+	.no_validado{
+		font-size:22px;
+		color:#F00;
+		font-weight:bold;
+	}
+	
+	.validado{
+		font-size:22px;
+		color:#0C3;
+		font-weight:bold;
+	}
+
+
+</style>
+</head>
+
+<body>
+<h1>GESTI&Oacute;N  DE CLIENTESADMIN</h1>
+
+<!-- //formulario insertar nuevo ClienteAdmin-->
+<form action="gestionclientes.php" method="post" name="datos_clientes" id="datos_clientes">
+	<label for="ID_ClienteAdmin">ID_ClienteAdmin <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_ClienteAdmin" class="form-input" required/>   
+      
+      <label for="NIF_NIE">NIF_NIE <span><em>(requerido)</em></span></label>
+      <input type="text" name="NIF_NIE" class="form-input" required/>
+       <label for="NombreCliente">NombreCliente <span><em>(requerido)</em></span></label>
+      <input type="text" name="NombreCliente" class="form-input" required/> 
+       <label for="Apellidos">Apellidos <span><em>(requerido)</em></span></label>
+      <input type="text" name="Apellidos" class="form-input" required/> 
+       <label for="Direccion">Direccion <span><em>(requerido)</em></span></label>
+      <input type="text" name="Direccion" class="form-input" required/> 
+       <label for="FechaNacimiento">FechaNacimiento <span><em>(Año-Mes-Dia.Ejemplo 2021-10-16)</em></span></label>
+      <input type="text" name="FechaNacimiento" class="form-input" required/> 
+       <label for="FechaCarnet">FechaCarnet <span><em>(Año-Mes-Dia.Ejemplo 2021-10-16)</em></span></label>
+      <input type="text" name="FechaCarnet" class="form-input" required/> 
+       <label for="NumeroCarnet">NumeroCarnet <span><em>(requerido)</em></span></label>
+      <input type="text" name="NumeroCarnet" class="form-input" required/>  
+      <label for="NombreUsuario">NombreUsuario <span><em>(requerido)</em></span></label>
+      <input type="text" name="NombreUsuario" class="form-input" required/>
+       <label for="Clave">Clave <span><em>(requerido)</em></span></label>
+      <input type="text" name="Clave" class="form-input" required/>  
+       <label for="Correo">Correo <span><em>(requerido)</em></span></label>
+      <input type="text" name="Correo" class="form-input" required/> 
+       <label for="Telefono">Telefono <span><em>(requerido)</em></span></label>
+      <input type="text" name="Telefono" class="form-input" required/>  
+       <label for="Edad">Edad <span><em>(requerido)</em></span></label>
+      <input type="text" name="Edad" class="form-input" required/>  
+       <label for="Sexo">Sexo <span><em>(requerido)</em></span></label>
+      <input type="text" name="Sexo" class="form-input" required/>  
+       <label for="CodigoPostal">CodigoPostal <span><em>(requerido)</em></span></label>
+      <input type="text" name="CodigoPostal" class="form-input" required/>  
+       <label for="Pais">Pais <span><em>(requerido)</em></span></label>
+      <input type="text" name="Pais" class="form-input" required/>  
+       <label for="Idioma">Idioma <span><em>(requerido)</em></span></label>
+      <input type="text" name="Idioma" class="form-input" required/>  
+       <label for="Administrador">Administrador <span><em>(requerido)</em></span></label>
+      <input type="text" name="Administrador" class="form-input" required/>  
+       
+	<input type="submit" name="btninsertar" id="insertando" value="INSERTAR NUEVO CLIENTEADMIN">
+		
+		
+	<br>       
+	  <input type="reset" value="Limpiar Datos Del Formulario (:">
+</form>
+<br>
+<!-- //formulario eliminar ClienteAdmin Elegido-->
+<form action="clienteseliminar.php" method="post" name="datos_clientes" id="datos_clientes">
+	 
+<input type="submit" name="btneliminar" id="eliminar" value="ELIMINAR  EL CLIENTEADMIN ELEGIDO">
+<label for="ID_ClienteAdmin">ID_ClienteAdmin <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_ClienteAdmin" class="form-input" required/>  
+</form>
+<!-- //formulario mostrar todos los clientesAdmin que están dados de alta-->
+<form action="clientesmostrar.php" method="post" name="datos_clientes" id="datos_clientes">
+		<input type="submit" name="btnmostrar" id="mostrar" value="MOSTRAR TODOS LOS CLIENTES QUE EST&Aacute;N DADOS DE ALTA">
+</form>
+<center>
+<button onclick="location.href='index.html'">IR A INDEX</button></center>
+</body>
+</html>
+
+

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>P&aacute;gina de Contratos de Sergio Rojas Rojas</title>
+<link rel="stylesheet" type="text/css" href="./estilosbicicletas.css" />
+<style>
+	h1{
+		text-align:center;
+	}
+
+	table{
+		background-color:white;
+		padding:5px;
+		border:#666 5px solid;
+	}
+	
+	.no_validado{
+		font-size:22px;
+		color:#F00;
+		font-weight:bold;
+	}
+	
+	.validado{
+		font-size:22px;
+		color:#0C3;
+		font-weight:bold;
+	}
+
+
+</style>
+</head>
+
+<body>
+<h1>GESTI&Oacute;N  DE CONTRATOS</h1>
+
+<!-- //formulario insertar Bicicleta-->
+<form action="gestioncontratos.php" method="post" name="datos_contratos" id="datos_contratos">
+	<label for="ID_Contrato">ID_Contrato <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_Contrato" class="form-input" required/>   
+      
+      <label for="ID_ClienteAdmin">ID_ClienteAdmin <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_ClienteAdmin" class="form-input" required/>
+       <label for="ID_Bicicleta">ID_Bicicleta <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_Bicicleta" class="form-input" required/> 
+       <label for="ID_Reserva">ID_Reserva <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_Reserva" class="form-input" required/> 
+       <label for="DetallesContrato">DetallesContrato <span><em>(requerido)</em></span></label>
+      <input type="text" name="DetallesContrato" class="form-input" required/> 
+       <label for="FechaRecogidaC">FechaRecogidaC <span><em>(Año-Mes-Dia.Ejemplo 2021-10-16)</em></span></label>
+      <input type="text" name="FechaRecogidaC" class="form-input" required/> 
+       <label for="FechaDevolucionC">FechaDevolucionC <span><em>(Año-Mes-Dia.Ejemplo 2021-10-16)</em></span></label>
+      <input type="text" name="FechaDevolucionC" class="form-input" required/> 
+       <label for="Precio">Precio <span><em>(requerido)</em></span></label>
+      <input type="text" name="Precio" class="form-input" required/>  
+      <label for="Observaciones">Observaciones <span><em>(requerido)</em></span></label>
+      <input type="text" name="Observaciones" class="form-input" required/>  
+	<input type="submit" name="btninsertar" id="insertando" value="INSERTAR NUEVO CONTRATO">
+		
+		
+	<br>       
+	  <input type="reset" value="Limpiar Datos Del Formulario (:">
+</form>
+<br>
+<!-- //formulario eliminar Bicicleta-->
+<form action="contratoseliminar.php" method="post" name="datos_contrato" id="datos_contrato">
+	 
+<input type="submit" name="btneliminar" id="eliminar" value="ELIMINAR  CONTRATO ELEGIDO">
+<label for="ID_Contrato">ID_Contrato <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_Contrato" class="form-input" required/>  
+</form>
+<!-- //formulario mostrar todas las  Bicicletas que están dadas de alta-->
+<form action="contratosmostrar.php" method="post" name="datos_contratos" id="datos_contratos">
+		<input type="submit" name="btnmostrar" id="mostrar" value="MOSTRAR TODOS LOS CONTRATOS QUE EST&Aacute;N DADAS DE ALTA">
+</form>
+<center>
+<button onclick="location.href='index.html'">IR A INDEX</button></center>
+</body>
+</html>
+
+

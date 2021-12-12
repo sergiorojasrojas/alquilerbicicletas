@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>P&aacute;gina de Marcas de Bicicletas de Sergio Rojas Rojas</title>
+<link rel="stylesheet" type="text/css" href="./estilosbicicletas.css" />
+<style>
+	h1{
+		text-align:center;
+	}
+
+	table{
+		background-color:white;
+		padding:5px;
+		border:#666 5px solid;
+	}
+	
+	.no_validado{
+		font-size:22px;
+		color:#F00;
+		font-weight:bold;
+	}
+	
+	.validado{
+		font-size:22px;
+		color:#0C3;
+		font-weight:bold;
+	}
+
+
+</style>
+</head>
+
+<body>
+<h1>GESTI&Oacute;N  DE MARCAS DE BICICLETAS</h1>
+
+<!-- //formulario insertar marcas-->
+<form action="gestionmarcas.php" method="post" name="datos_marcas" id="datos_marcas">
+	<label for="ID_Marca">ID_Marca <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_Marca" class="form-input" required/>   
+      
+      <label for="NombreM">NombreM <span><em>(requerido)</em></span></label>
+      <input type="text" name="NombreM" class="form-input" required/>
+       <label for="Proveedor">Proveedor <span><em>(requerido)</em></span></label>
+      <input type="text" name="Proveedor" class="form-input" required/> 
+       <label for="Fecha_Fabricacion">Fecha_Fabricaci&oacute;n <span><em>(Año-Mes-Dia.Ejemplo 2021-10-16)</em></span></label>
+      <input type="text" name="Fecha_Fabricacion" class="form-input" required/> 
+       <label for="Observaciones">Observaciones <span><em>(requerido)</em></span></label>
+      <input type="text" name="Observaciones" class="form-input" required/> 
+       
+	<input type="submit" name="btninsertar" id="insertando" value="INSERTAR NUEVA MARCA">
+		
+		
+	<br>       
+	  <input type="reset" value="Limpiar Datos Del Formulario (:">
+</form>
+<br>
+<!-- //formulario eliminar marca-->
+<form action="marcaseliminar.php" method="post" name="datos_marcas" id="datos_marcas">
+	 
+<input type="submit" name="btneliminar" id="eliminar" value="ELIMINAR  MARCA ELEGIDA">
+<label for="ID_Marca">ID_Marca <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_Marca" class="form-input" required/>  
+</form>
+<!-- //formulario mostrar todas las  marcas que están dadas de alta-->
+<form action="marcasmostrar.php" method="post" name="datos_marcas" id="datos_marcas">
+		<input type="submit" name="btnmostrar" id="mostrar" value="MOSTRAR TODAS LAS MARCAS QUE EST&Aacute;N DADAS DE ALTA">
+</form>
+<center>
+<button onclick="location.href='index.html'">IR A INDEX</button></center>
+</body>
+</html>
+
+

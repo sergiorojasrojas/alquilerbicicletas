@@ -1,0 +1,30 @@
+body {
+margin: 0;
+padding: 0;
+font: normal 13px arial, helvetica, sans-serif;
+background: #33E0FF;
+}
+#contenedor {
+margin: 0 auto;
+width: 900px;
+}
+#cabecera {
+height: 120px;
+background: transparent;
+}
+#cabecera h1 {
+margin: 0;
+padding: 25px;
+font: bold 40px arial, helvetica, sans-serif;
+color: black;
+}
+.boton{
+        font-size:15px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        color:white;
+        background:#638cb5;
+        border:1px;
+        width:100px;
+        height:19px;
+       }

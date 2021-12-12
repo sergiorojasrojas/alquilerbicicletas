@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REQUISITOS PARA REALIZAR LA RESERVA</title>
+
+<link rel="stylesheet" type="text/css" href="./estilosbicicletas.css" />
+</head>
+<body>
+	<h1>COMPROBACI&Oacute;N DE DATOS PARA REALIZAR LA RESERVA</h1>
+<form action="requisitos.php" method="post"> 
+Escribe tu edad: 
+<br>
+<input type="text" name="edad" size="2"> 
+<input type="submit" value="COMPROBAR DATOS"> 
+</form> 
+<br>
+
+<form action="comprobarclientes.php" method="post" name="datos_clientes" id="datos_clientes">
+	 
+
+<label for="ID_ClienteAdmin">ID_ClienteAdmin <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_ClienteAdmin" class="form-input" required/>  
+      <br>
+      <input type="submit" name="btnregistro" id="registro" value="COMPROBAR REGISTRO CLIENTE">
+</form>
+<br>
+
+<form action="comprobarreservas.php" method="post" name="datos_clientes" id="datos_clientes">
+	 
+
+<label for="ID_Reserva">ID_Reserva <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_Reserva" class="form-input" required/>  
+      <br>
+      <input type="submit" name="btnregistro" id="registro" value="COMPROBAR REGISTRO RESERVAS">
+</form>
+<br>
+<form action="comprobarbicilibre.php" method="post" name="datos_clientes" id="datos_clientes">
+	 
+
+<label for="ID_Bicicleta">ID_Bicicleta <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_Bicicleta" class="form-input" required/>  
+      <br>
+           
+      <input type="submit" name="btnregistro" id="registro" value="COMPROBAR DISPONIBILIDAD DE BICICLETAS">
+</form>
+<center>
+<button onclick="location.href='gestionreservas.html'">IR A GESTI&Oacute;N DE RESERVAS</button></center>
+</body>
+</html>

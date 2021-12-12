@@ -1,0 +1,51 @@
+body {
+margin: 0;
+padding: 0;
+font: normal 13px arial, helvetica, sans-serif;
+background: #33E0FF;
+}
+#contenedor {
+margin: 0 auto;
+width: 900px;
+}
+#cabecera {
+height: 120px;
+background: transparent;
+}
+#cabecera h1 {
+margin: 0;
+padding: 25px;
+font: bold 40px arial, helvetica, sans-serif;
+color: black;
+}
+#menu {
+background: black;
+height: 60px;
+}
+#fondomenu {
+background: ;
+width: 847px;
+height: 60px;
+}
+#fondomenu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+#fondomenu ul li a {
+background: ;
+width: 120px;
+height: 60px;
+margin-left: 1px;
+float: left;
+text-align: center;
+line-height: 30px;
+font-size: 13px;
+color: white;
+text-decoration: none;
+display: block;
+}
+#fondomenu ul li a:hover {
+background: #4683F6;
+color: black;
+}

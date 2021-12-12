@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>P&aacute;gina de Reservas de Sergio Rojas Rojas</title>
+<link rel="stylesheet" type="text/css" href="./estilosbicicletas.css" />
+<style>
+	h1{
+		text-align:center;
+	}
+
+	table{
+		background-color:white;
+		padding:5px;
+		border:#666 5px solid;
+	}
+	
+	.no_validado{
+		font-size:22px;
+		color:#F00;
+		font-weight:bold;
+	}
+	
+	.validado{
+		font-size:22px;
+		color:#0C3;
+		font-weight:bold;
+	}
+
+
+</style>
+</head>
+
+<body>
+	<h1>IMPORTANTE PULSE EL SIGUIENTE BOT&Oacute;N PARA COMPROBAR SI PUEDE REALIZAR LA RESERVA</h1>
+	<center>
+<button onclick="location.href='requisitos.html'">IR A REQUISITOS DE LA RESERVA</button></center>
+<h1>GESTI&Oacute;N  DE RESERVAS</h1>
+
+
+<!-- //formulario insertar Reserva-->
+<form action="gestionreservas.php" method="post" name="datos_reservas" id="datos_reservas">
+	<label for="ID_Reserva">ID_Reserva <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_Reserva" class="form-input" required/>   
+      
+      <label for="ID_ClienteAdmin">ID_ClienteAdmin <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_ClienteAdmin" class="form-input" required/>
+       <label for="ID_Marca">ID_Marca <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_Marca" class="form-input" required/> 
+      <label for="FechaRecogidaR">FechaRecogidaReserva <span><em>(Año-Mes-Dia.Ejemplo 2021-10-16)</em></span></label>
+      <input type="text" name="FechaRecogidaR" class="form-input" required/> 
+       <label for="FechaDevolucionR">FechaDevolucion Reserva <span><em>(Año-Mes-Dia.Ejemplo 2021-10-16)</em></span></label>
+      <input type="text" name="FechaDevolucionR" class="form-input" required/> 
+       <label for="Peticiones">Peticiones <span><em>(requerido)</em></span></label>
+      <input type="text" name="Peticiones" class="form-input" required/>  
+      <label for="Observaciones">Observaciones <span><em>(requerido)</em></span></label>
+      <input type="text" name="Observaciones" class="form-input" required/>  
+	<input type="submit" name="btninsertar" id="insertando" value="INSERTAR NUEVA RESERVA">
+		
+		
+	<br>       
+	  <input type="reset" value="Limpiar Datos Del Formulario (:">
+</form>
+<br>
+<!-- //formulario eliminar Bicicleta-->
+<form action="reservaseliminar.php" method="post" name="datos_reservas" id="datos_reservas">
+	 
+<input type="submit" name="btneliminar" id="eliminar" value="ELIMINAR  RESERVA ELEGIDA">
+<label for="ID_Reserva">ID_Reserva <span><em>(requerido)</em></span></label>
+      <input type="text" name="ID_Reserva" class="form-input" required/>  
+</form>
+<!-- //formulario mostrar todas las  Bicicletas que están dadas de alta-->
+<form action="reservasmostrar.php" method="post" name="datos_reservas" id="datos_reservas">
+		<input type="submit" name="btnmostrar" id="mostrar" value="MOSTRAR TODAS LAS RESERVAS QUE EST&Aacute;N DADAS DE ALTA">
+</form>
+<center>
+<button onclick="location.href='index.html'">IR A INDEX</button></center>
+</body>
+</html>
+
+
